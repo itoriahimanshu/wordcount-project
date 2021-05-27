@@ -1,0 +1,14 @@
+<h1>COUNT: {{countit}}</h1>
+<br/>
+<a href="{% url 'home' %}"><h2>Start again</h2></a>
+<br/>
+{{fulltxt}}
+<br/>
+<h1>Word Count</h1>
+{{worddictionary}}
+<br/>
+{% for word,totcount in worddictionary %}
+{{ word }} - {{totcount}}
+<br/>
+{% endfor %}
+</form>
